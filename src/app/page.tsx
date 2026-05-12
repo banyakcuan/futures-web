@@ -22,7 +22,7 @@ import { TrendingUp, TrendingDown, Settings, Search, ShieldAlert } from "lucide-
    CONFIG
 ========================================= */
 const BINANCE_FAPI = "https://fapi.binance.com";
-const WS_BASE = "wss://fstream.binance.com/stream?streams=";
+const WS_BASE = "wss://fstream.binance.com/market/stream?streams=";
 
 const TIMEFRAMES = ["1m", "5m", "15m", "1h", "1d"] as const;
 type TF = (typeof TIMEFRAMES)[number];
